@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a05f88ed924ac49b672a4e60a6c3b1, type: 3}
+  m_Name: AttackDirectionNotZeroCondition
+  m_EditorClassIdentifier: 
+  retriggerable: 0
+  autoReset: 0
+  bindSystemName: InputSystem
+  bindPropertyName: AttackDirection
+  comparatorX: 2
+  thresholdX: 0
+  comparatorY: 0
+  thresholdY: 0
+  comparatorZ: 2
+  thresholdZ: 0

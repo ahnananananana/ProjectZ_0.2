@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d61be960e34724bb9a8f01e6c9b1fc, type: 3}
+  m_Name: GunBaseData_AR_2
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5043642844715957321, guid: fcbf1b25f3d64504fb70adc4bc94ceb2, type: 3}
+  gunName: AR2
+  Image: {fileID: 0}
+  Rank: 0
+  bullet: {fileID: 5508244708631291104, guid: 7cf1e39de629ce94d87d8f0302459f52, type: 3}
+  attackPoint: 2
+  attackSpeed: 3
+  magazineSize: 30
+  recoilAngle: 5
+  bulletSpeed: 15
+  weaponRigData:
+    WeaponPosePos: {x: 0.04, y: 1.21, z: -0.1}
+    WeaponPoseRot: {x: -0.7, y: -66.12, z: -4.9}
+    RightHandPos: {x: 0.02, y: -0.092, z: 0.22}
+    RightHandRot: {x: 83.6992, y: 89.28658, z: 171.89185}
+    RightHintPos: {x: 0.131, y: -0.288, z: -0.702}
+    LeftHandPos: {x: -0.108, y: -0.057, z: 0.607}
+    LeftHandRot: {x: 359.72226, y: 345.13583, z: 186.5065}
+    LeftHintPos: {x: -0.9, y: -0.005, z: -0.32}
+  fireAudioClip: {fileID: 8300000, guid: 592186155ebdcf941a963640e8d61603, type: 3}

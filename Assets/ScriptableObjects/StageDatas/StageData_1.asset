@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3b248873524894f97d3deda45979a2, type: 3}
+  m_Name: StageData_1
+  m_EditorClassIdentifier: 
+  mapCount: 12
+  maps:
+  - {fileID: 2300791345075859199, guid: 5134aff5237b7e04899d6f4cb299d09a, type: 3}
+  waveSets:
+  - {fileID: 11400000, guid: 1b38a46980d97e14ebedb7b110ef03e9, type: 2}
+  - {fileID: 11400000, guid: e38cc9fa646b2c449abf4b9eada71579, type: 2}
+  - {fileID: 11400000, guid: 0a7f7f385975573429297f1ddc298770, type: 2}

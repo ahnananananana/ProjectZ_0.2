@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19283ef240426e044a1d67795ef62693, type: 3}
+  m_Name: Player_AimMove
+  m_EditorClassIdentifier: 
+  isRetriggerable: 0
+  executePriority: 0
+  activateConditionSOs:
+  - {fileID: 11400000, guid: e7394c22452ce7c489879e0a0a67cde2, type: 2}
+  deactivateConditionSOs:
+  - {fileID: 11400000, guid: 5becb9b852c68ec4f9033a06e3805fdc, type: 2}
+  blockingStateSOs: []
+  blockingOnlyStateSOs: []
+  requiredStateSOs:
+  - {fileID: 11400000, guid: c66cdea8e082fb9469e7b38de3d40621, type: 2}
+  actionSOs:
+  - {fileID: 11400000, guid: db3e8fe7ef2611d4494e92a75bc6adaf, type: 2}
+  - {fileID: 11400000, guid: fdc0b5cd2c768d44288a9bf63b487143, type: 2}
+  - {fileID: 11400000, guid: 6b87a1882a75a8c4a86c318a467d07d6, type: 2}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d61be960e34724bb9a8f01e6c9b1fc, type: 3}
+  m_Name: GunBaseData_AK47
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 613790225403033170, guid: c2839d8b83d7d2746930c0ea2f246e22, type: 3}
+  gunName: AK47
+  Image: {fileID: 0}
+  Rank: 0
+  bullet: {fileID: 5508244708631291104, guid: 7cf1e39de629ce94d87d8f0302459f52, type: 3}
+  attackPoint: 12.83
+  attackSpeed: 1
+  magazineSize: 30
+  recoilAngle: 10
+  bulletSpeed: 10
+  weaponRigData:
+    WeaponPosePos: {x: 0.02, y: 1.27, z: -0.12}
+    WeaponPoseRot: {x: 4.58, y: -56.44, z: -2.68}
+    RightHandPos: {x: 0.0184, y: -0.079, z: 0.1912}
+    RightHandRot: {x: 77.22059, y: 273.9523, z: 3.151907}
+    RightHintPos: {x: 0.106, y: -0.354, z: -0.181}
+    LeftHandPos: {x: -0.0879, y: -0.0453, z: 0.5839}
+    LeftHandRot: {x: 1.3071768, y: 322.5404, z: 172.5512}
+    LeftHintPos: {x: -0.826, y: -0.354, z: 0.078}
+  fireAudioClip: {fileID: 8300000, guid: 5bd56b21479948e4ea5b50144fb644a2, type: 3}

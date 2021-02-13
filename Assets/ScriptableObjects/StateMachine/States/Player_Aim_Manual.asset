@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19283ef240426e044a1d67795ef62693, type: 3}
+  m_Name: Player_Aim_Manual
+  m_EditorClassIdentifier: 
+  isRetriggerable: 0
+  executePriority: 0
+  bindedChannel: {fileID: 0}
+  activateConditionSOs:
+  - {fileID: 11400000, guid: eae48235c6569ef4c9fd049d53d1f0da, type: 2}
+  deactivateConditionSOs:
+  - {fileID: 11400000, guid: 9debb2f6730fb15488c91099967910ca, type: 2}
+  blockingStateSOs:
+  - {fileID: 11400000, guid: 6f7190c3d48877248975fd79927ded77, type: 2}
+  blockingOnlyStateSOs: []
+  requiredStateSOs: []
+  actionSOs:
+  - {fileID: 11400000, guid: c623ca8317ec1ba478b1ac38087c1de4, type: 2}
+  - {fileID: 11400000, guid: 66e29c9d87ecf8c408bb6d0680f9821c, type: 2}
+  - {fileID: 11400000, guid: db3e8fe7ef2611d4494e92a75bc6adaf, type: 2}

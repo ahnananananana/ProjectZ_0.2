@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f7b1c4a19c784549af468cf6be3eb98, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  money:
+    value: 2222
+  editorUnitArray:
+  - baseData: {fileID: 11400000, guid: 9e08c2624bd08304e9fe2d0c0be14397, type: 2}
+    level:
+      value: 3
+    gunData:
+      baseData: {fileID: 11400000, guid: 56cc6b14d1c61dc4bbce80e4239115b6, type: 2}

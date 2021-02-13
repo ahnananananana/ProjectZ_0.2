@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b6f0ff11cdd3f47a3615758b2bf260, type: 3}
+  m_Name: UnitBaseData_Biker
+  m_EditorClassIdentifier: 
+  unitName: Biker
+  image: {fileID: 21300000, guid: 892ec187c284cb142946dbf75ad02357, type: 3}
+  healthPoint: 100
+  attackPoint: 0
+  attackSpeed: 10
+  defensePoint: 1
+  moveSpeed: 5
+  unitPrefab: {fileID: 931903950116381766, guid: 410155fd0f9ac074ba704423e53ac2a5,
+    type: 3}
+  canPlay:
+    value: 1
+  EquipedGunData: {fileID: 11400000, guid: d13e6d6a76fa905458a33143c4e7574a, type: 2}

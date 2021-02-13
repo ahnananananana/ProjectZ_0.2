@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848a7d1949dc37a46ac70d925b5d489b, type: 3}
+  m_Name: GameData
+  m_EditorClassIdentifier: 
+  playerUnitData:
+    value: {fileID: 11400000, guid: 9e08c2624bd08304e9fe2d0c0be14397, type: 2}
+  PlayerUnitBaseDatas:
+  - {fileID: 11400000, guid: 9e08c2624bd08304e9fe2d0c0be14397, type: 2}
+  - {fileID: 11400000, guid: f078ed62b074d34489d86706c70a0e00, type: 2}
+  - {fileID: 11400000, guid: af48897c047ee5f4b8749c07934d823a, type: 2}
+  EnemyUnitBaseDatas:
+  - {fileID: 11400000, guid: 5660a8a42f67b11418b21f26e36f0985, type: 2}
+  - {fileID: 11400000, guid: 5c46b4c73a041274bbc80cbe251687d7, type: 2}
+  - {fileID: 11400000, guid: 169a094fe0290cc4cb0473c70d5fc003, type: 2}
+  - {fileID: 11400000, guid: 374099eff2b5bd749b7d8a7b1d27dbb9, type: 2}
+  GunBaseDatas:
+  - {fileID: 11400000, guid: 6c935c0900ec128439d80dfdc9f1bac4, type: 2}
+  - {fileID: 11400000, guid: b0af871bc8ef7284f81f43838e0503a4, type: 2}
+  - {fileID: 11400000, guid: d13e6d6a76fa905458a33143c4e7574a, type: 2}
+  - {fileID: 11400000, guid: 56cc6b14d1c61dc4bbce80e4239115b6, type: 2}

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19283ef240426e044a1d67795ef62693, type: 3}
+  m_Name: Enemy_Attack
+  m_EditorClassIdentifier: 
+  isRetriggerable: 0
+  executePriority: 0
+  bindedChannel: {fileID: 0}
+  activateConditionSOs:
+  - {fileID: 11400000, guid: 1c3095839acfc9e43bf9b6cfa0d38b77, type: 2}
+  - {fileID: 11400000, guid: 1a7b093283811c24e8cde411afed4d6b, type: 2}
+  deactivateConditionSOs:
+  - {fileID: 11400000, guid: 8823001040f0e1e4fafb8abe344a2af9, type: 2}
+  blockingStateSOs:
+  - {fileID: 11400000, guid: 9b24fba57164ea74389ea696f5b30354, type: 2}
+  blockingOnlyStateSOs: []
+  requiredStateSOs: []
+  actionSOs:
+  - {fileID: 11400000, guid: eac7266da1bb6cf40a6a40bdd00ddb63, type: 2}
+  - {fileID: 11400000, guid: 984dbf8ea368b024882c2d54eee38c56, type: 2}
+  - {fileID: 11400000, guid: ace0d9f1e4585e345a11b7289b78d5a0, type: 2}
+  - {fileID: 11400000, guid: 22c8d183fa282834697498e4180acb12, type: 2}
+  - {fileID: 11400000, guid: ef3ee8c4d13a15c46a585916342e5494, type: 2}

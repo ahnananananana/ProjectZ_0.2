@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23827ba6773c01f44b3ae99529eed8ce, type: 3}
+  m_Name: EnemyBaseData_Zombie_02
+  m_EditorClassIdentifier: 
+  unitName: Zombie02
+  image: {fileID: 0}
+  healthPoint: 100
+  attackPoint: 10
+  attackSpeed: 0
+  defensePoint: 0
+  moveSpeed: 2
+  unitPrefab: {fileID: 4777331911947889883, guid: 7114400cb920f7948889f05d7b4cb9ed,
+    type: 3}
+  attackRange: 1
