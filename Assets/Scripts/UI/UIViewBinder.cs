@@ -34,6 +34,7 @@ namespace HDV
                 Debug.AssertIsNotNull(viewModel);
                 root = viewModel;
             }*/
+
             Debug.AssertIsNotNull(viewModel);
 
             Bind(viewModel);

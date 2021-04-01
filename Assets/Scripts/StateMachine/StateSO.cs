@@ -18,9 +18,7 @@ namespace HDV
         public int ExecutePriority => executePriority;
         public StateObjectChannel BindedChannel => bindedChannel;
 
-        public State CreateState(IStateObject stateObject, ref int bitMask, SystemBinder systemBinder, Dictionary<StateSO, State> createdStates, 
-            Dictionary<StateCondition, State> createdConditions/*, 
-            Action<StateCondition> onTriggerActivateMethod, Action<StateCondition> onTriggerDeactivateMethod*/)
+        public State CreateState(IStateObject stateObject, ref int bitMask, SystemBinder systemBinder, Dictionary<StateSO, State> createdStates)
         {
             if (createdStates.TryGetValue(this, out State state))
                 return state;
@@ -29,12 +27,12 @@ namespace HDV
 
             createdStates.Add(this, state);
 
-            var activateOnlyConditions = CreateConditions(activateConditionSOs, state, systemBinder, createdConditions/*, onTriggerActivateMethod*/);
-            var deactivateOnlyConditions = CreateConditions(deactivateConditionSOs, state, systemBinder, createdConditions/*, onTriggerDeactivateMethod*/);
+            var activateOnlyConditions = CreateConditions(activateConditionSOs, state, systemBinder);
+            var deactivateOnlyConditions = CreateConditions(deactivateConditionSOs, state, systemBinder);
 
-            var blockingStates = CreateStates(stateObject, blockingStateSOs, ref bitMask, systemBinder, createdStates, createdConditions/*, onTriggerActivateMethod, onTriggerDeactivateMethod*/);
-            var blockingOnlyStates = CreateStates(stateObject, blockingOnlyStateSOs, ref bitMask, systemBinder, createdStates, createdConditions/*, onTriggerActivateMethod, onTriggerDeactivateMethod*/);
-            var requiredStates = CreateStates(stateObject, requiredStateSOs, ref bitMask, systemBinder, createdStates, createdConditions/*, onTriggerActivateMethod, onTriggerDeactivateMethod*/);
+            var blockingStates = CreateStates(stateObject, blockingStateSOs, ref bitMask, systemBinder, createdStates);
+            var blockingOnlyStates = CreateStates(stateObject, blockingOnlyStateSOs, ref bitMask, systemBinder, createdStates);
+            var requiredStates = CreateStates(stateObject, requiredStateSOs, ref bitMask, systemBinder, createdStates);
 
             var actions = CreateActions(actionSOs, systemBinder);
 
@@ -45,8 +43,7 @@ namespace HDV
             return state;
         }
 
-        private State[] CreateStates(IStateObject stateObject, StateSO[] stateSOs, ref int bitMask, SystemBinder systemBinder, Dictionary<StateSO, State> createdStates, Dictionary<StateCondition, State> createdConditions/*,
-            Action<StateCondition> onTriggerActivateMethod, Action<StateCondition> onTriggerDeactivateMethod*/)
+        private State[] CreateStates(IStateObject stateObject, StateSO[] stateSOs, ref int bitMask, SystemBinder systemBinder, Dictionary<StateSO, State> createdStates)
         {
             State[] states = new State[stateSOs.Length];
             for (int i = 0; i < states.Length; ++i)
@@ -58,21 +55,19 @@ namespace HDV
                 }
                 else
                 {
-                    state = so.CreateState(stateObject, ref bitMask, systemBinder, createdStates, createdConditions/*, onTriggerActivateMethod, onTriggerDeactivateMethod*/);
+                    state = so.CreateState(stateObject, ref bitMask, systemBinder, createdStates);
                     states[i] = state;
                 }
             }
             return states;
         }
 
-        private StateCondition[] CreateConditions(StateConditionSO[] stateConditionSOs, State state, SystemBinder systemBinder, Dictionary<StateCondition, State> createdConditions/*, Action<StateCondition> triggerMethod*/)
+        private StateCondition[] CreateConditions(StateConditionSO[] stateConditionSOs, State state, SystemBinder systemBinder)
         {
             StateCondition[] conditions = new StateCondition[stateConditionSOs.Length];
             for (int i = 0; i < conditions.Length; ++i)
             {
                 conditions[i] = stateConditionSOs[i].CreateCondition(systemBinder);
-                //conditions[i].TriggerEvent += triggerMethod;
-                createdConditions.Add(conditions[i], state);
             }
             return conditions;
         }
